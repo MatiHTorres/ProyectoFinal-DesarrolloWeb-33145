@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  @include resetListas();
+
+  a:link,
+  a:visited,
+  a:active,
+  a:hover {
+    @include resetListas();
+  }
+
+  a:link {
+    color: darkslategrey;
+  }
+
+  a:visited {
+    color: rgb(31, 30, 30);
+  }
+
+  a:active {
+    color: rgb(78, 78, 167);
+  }
+}
+
+body {
+  background: url(../assets/background/FondoPrincipal.png);
+  background-size: 100%;
+
+  // .grilla {
+  //   display: grid;
+  //   grid-template-areas:
+  //     "header header"
+  //     "nav nav"
+  //     "filtro main"
+  //     "footer footer";
+  //   grid-template-rows: 15vmax auto auto auto;
+  //   grid-template-columns: 10% 90%;
+  // }
+  
+  .grilla {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "filtro main"
+      "footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 10% 90%;
+  }
+
+  .grilla2 {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 10% 90%;
+  }
+
+  .grilla3 {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "filtro filtro"
+      "main main"
+      "footer footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 10% 90%;
+
+  }
+
+  .titulo {
+    font-family: $fuenteSamurai;
+    text-align: center;
+    font-size: 4vh;
+    background: linear-gradient(rgb(40, 0, 0),rgba(0, 0, 0, 0.98));
+    text-shadow: $textShadowNav;
+    color: $colorLetra;
+  }
+
+  .subTitulo {
+    font-family: $fuenteSamurai;
+    text-align: center;
+    font-size: 2.5vmax;
+    font-weight: 500;
+    color: $colorSubTitulo;
+    text-shadow: $textShadowBlack;
+  }
+
+  .sombraImg {
+    border-radius: 8%;
+    box-shadow: $sombraImg;
+  }
+
+  .buttons {
+    margin: 0 0 2vh 0;
+
+    input{
+      font-family: $fuenteSamurai;
+      font-size: 2.5vh;
+    }
+  }
+
+  .buttons :hover {
+    transform: scale(1.5);
+    transition: .2s;
+  }
+
+  .sombraB {
+    box-shadow: $sombrab;
+  }
+
+  hr {
+    width: 80%;
+    margin: 1vh auto;
+    border-color: $colorBordeHr;
+  }
+}

@@ -1,0 +1,84 @@
+header {
+  grid-area: header ;
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 2vh;
+  box-shadow: $sombra;
+  h1{
+    height: 5vh;
+    font-weight: 500;
+  }
+  img:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+  
+
+  nav {  
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $backgroundGris;
+    
+    .logoTienda{
+      width: 15vmin;
+      margin-left: 5vw;
+    }
+  
+    .barBtn{
+      display: none;
+      font-size: 3vmax;
+      margin-right: 10vh;
+      color: red;
+      cursor: pointer;
+    }
+  
+    .navMenu{
+      position: relative;
+      height: 100px;
+      top: 0;
+      background: none;
+      transition: none;
+      text-align: right;
+      margin-right: 1vw;
+      hr{
+        display: none;
+      }
+      li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 10px;
+        transition: none;
+        
+        a{
+          font-family: $fuenteSamurai;
+          color: black;
+          font-size: 2.2vmax;
+          text-shadow: $textShadowNavMobile;
+  
+          &.activo , &:hover{
+            color: rgb(170, 3, 3);
+          }        
+        }
+
+        .perfil{
+          color: rgb(60, 52, 117);
+          text-shadow: $textShadowBlue;
+        }
+        
+        &:hover{
+          transform: scale(1.2);
+          transition: 0.3s;
+
+        } 
+        
+      }
+    }
+
+    #check{
+      display: none;
+    }
+  }
+}

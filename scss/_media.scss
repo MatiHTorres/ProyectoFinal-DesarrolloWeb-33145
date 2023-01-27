@@ -1,0 +1,317 @@
+@include vista {
+    div #main #divMain img {
+        width: 15%;
+    }
+}
+
+@include vista (1540px) {
+    div #main #divMain img {
+        width: 18%;
+    }
+}
+
+@include vista(1200px) {
+    div #main #divMain img {
+        width: 23%;
+    }
+
+    body .grilla {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "filtro filtro"
+            "main main"
+            "footer footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 10% 90%;
+
+    }
+
+    body .grilla2 {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "footer footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 50% 50%;
+
+    }
+
+    div #filtro section nav .ulFiltros {
+        display: flex;
+        flex-direction: row;
+    }
+
+    div #filtro {
+        margin: 0 15vw 1vh 15vw;
+    }
+
+    div #mainR{
+        section{
+            width: 65%;
+        }
+    }
+
+}
+
+@include vista (800px) {
+
+    header {
+
+        grid-area: header;
+        width: 100%;
+        height: 20vh;
+        margin-bottom: 2vh;
+        box-shadow: $sombra;
+
+        nav {
+
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $backgroundGris;
+
+            .logoTienda {
+                width: 15vmin;
+                margin-left: 5vw;
+            }
+
+            .barBtn {
+                display: block;
+                font-size: 6vmax;
+                margin-right: 10vw;
+                color: rgb(50, 0, 0);
+                cursor: pointer;
+            }
+
+            .navMenu {
+                position: absolute;
+                width: 100%;
+                height: 0vh;
+                top: 20vh;
+                background: linear-gradient(rgb(50, 0, 0), rgba(0, 0, 0, 0.98));
+                text-align: center;
+                transition: all .2s;
+
+                hr {
+                    display: none;
+                }
+
+                li {
+                    display: none;
+                    line-height: 4vh;
+                    margin: 5vh 0;
+                    transition: all .5s;
+
+                    a {
+                        font-family: $fuenteSamurai;
+                        color: whitesmoke;
+                        font-size: 3vmax;
+
+
+                        &.activo,
+                        &:hover {
+                            color: red;
+                            transition: 0.3s;
+                        }
+
+                    }
+                    .perfil{
+                        color: rgb(81, 65, 185);
+                        text-shadow: $textShadowBlue;
+                    }
+                }
+            }
+
+            #check {
+                display: none;
+            }
+
+            #check:checked~.navMenu {
+                height: 80%;
+            }
+
+            #check:checked~.navMenu li {
+                display: block;
+            }
+        }
+    }
+
+
+    div #main #divMain img {
+        width: 30%;
+    }
+
+    body .grilla {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "filtro filtro"
+            "main main"
+            "footer footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 10% 90%;
+
+    }
+
+    body .grilla2 {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 50% 50%;
+
+    }
+
+    body .grilla3 {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "filtro filtro"
+            "main main"
+            "footer footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 10% 90%;
+
+    }
+
+    div #filtro {
+        margin: 0 1vh 1vh 1vh;
+
+    }
+
+    div #filtro2 {
+        margin: 0 7vh 1vh 7vh;
+    }
+
+    nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    #mainC {
+        .mapa {
+            height: 50vh;
+        }
+    }
+    
+    div #mainR{
+        section{
+            width: 80%;
+        }
+    }
+
+
+
+}
+
+@include vista(915px) {
+    @media (orientation: landscape) {
+        footer .redes {
+            @include flexCenter();
+            height: 10vh;
+        }
+
+        footer .redes ul {
+            display: flex;
+            width: 100;
+        }
+
+        footer .redes ul li {
+            @include flex();
+            width: auto;
+            height: auto;
+            text-align: center;
+
+        }
+
+        footer .redes ul li a {
+            @include flexCenter();
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+    }
+
+}
+
+@include vista (455px) {
+
+    div #main #divMain img {
+        width: 45%;
+    }
+
+    div #filtro {
+        margin: auto 1vh 1vh 1vh;
+    }
+
+    .ulFiltros {
+        @include flex(row);
+        flex-wrap: wrap;
+    }
+
+    nav .menu {
+        min-height: 6vh;
+        height: auto;
+    }
+
+    nav .perfil2 {
+        min-height: 6vh;
+        height: auto;
+    }
+
+    section #filtro {
+        margin: 0 1vh 1vh 1vh;
+    }
+
+    footer .redes {
+        @include flexCenter();
+        height: 7vh;
+
+    }
+
+    footer .redes ul {
+        display: flex;
+        width: 100;
+    }
+
+    footer .redes ul li {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    footer .redes ul li a {
+        @include flexCenter();
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+    }
+
+    #mainC {
+        .mapa {
+            height: 40vh;
+        }
+    }
+
+    div #filtro2 {
+        margin: 0 2vh 1vh 2vh;
+    }
+
+}
+
+@include vista (290px) {
+    div #main #divMain img {
+        width: 95%;
+    }
+}

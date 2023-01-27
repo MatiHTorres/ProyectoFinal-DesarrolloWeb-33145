@@ -1,0 +1,22 @@
+@mixin flex($direccion : column){
+    display: flex;
+    flex-direction: $direccion;
+}
+
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin resetListas{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+// mixin para las MediaQueries
+@mixin vista($medida : 1920px) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
