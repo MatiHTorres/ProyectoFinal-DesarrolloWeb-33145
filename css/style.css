@@ -421,9 +421,7 @@ footer {
         header nav .navMenu li {
           display: none;
           line-height: 4vh;
-          margin: 5vh auto;
-          transition: all .3s;
-          width: 50%; }
+          transition: all .3s; }
           header nav .navMenu li a {
             font-family: "CF Samurai Bob", sans-serif;
             color: whitesmoke;
@@ -439,7 +437,9 @@ footer {
       header nav #check:checked ~ .navMenu {
         height: 100%; }
       header nav #check:checked ~ .navMenu li {
-        display: block; }
+        display: block;
+        margin: 5vh auto;
+        width: 50%; }
   div #main #divMain img {
     width: 30%; }
   body .grilla {

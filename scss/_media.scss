@@ -108,9 +108,8 @@
                 li {
                     display: none;
                     line-height: 4vh;
-                    margin: 5vh auto;
                     transition: all .3s;
-                    width: 50%;
+                       
                     a {
                         font-family: $fuenteSamurai;
                         color: whitesmoke;
@@ -141,7 +140,8 @@
 
             #check:checked~.navMenu li {
                 display: block;
-                
+                margin: 5vh auto;
+                width: 50%; 
             }
         }
     }
