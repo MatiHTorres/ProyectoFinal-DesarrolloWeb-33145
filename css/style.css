@@ -17,7 +17,7 @@
     color: #4e4ea7; }
 
 body {
-  background: url(../assets/background/FondoPrincipal.png);
+  background: url(../assets/background/FondoPrincipal.webp);
   background-size: 100%; }
   body .grilla {
     display: grid;
