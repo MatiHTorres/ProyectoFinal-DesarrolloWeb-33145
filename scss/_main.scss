@@ -33,7 +33,7 @@ div {
 
                     li {
                         a {
-                            color: $colorLetra;
+                            color: map-get($coloresBases , Letra );
 
                         }
 
@@ -45,7 +45,7 @@ div {
 
                     .tituloFiltros {
                         text-align: center;
-                        color: rgb(255, 255, 255);
+                        color: map-get($coloresBases , Letra );
                         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
                         text-shadow: $textShadowBlue;
                         font-weight: 500;
@@ -90,7 +90,7 @@ div {
 
                     li {
                         a {
-                            color: $colorLetra;
+                            color: map-get($coloresBases , Letra );
 
                         }
 
@@ -101,7 +101,7 @@ div {
 
                     .tituloFiltros {
                         text-align: center;
-                        color: $colorLetra;
+                        color: map-get($coloresBases , Letra );
                         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
                         text-shadow: $textShadowBlue;
                         font-weight: 500;
@@ -147,8 +147,8 @@ div {
         flex-flow: wrap;
         flex-wrap: wrap;
         font-family: $fuenteSamurai;
-        color: $colorLetra;
-        font-size: 1.5vmax;
+        color: map-get($coloresBases , Letra );
+        font-size: 2vmax;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -164,6 +164,10 @@ div {
             width: 100%;
         }
 
+        section{
+            width: 98%;
+        }
+
         .cajaEncargo {
             width: 60vw;
             height: 25vh;
@@ -176,7 +180,7 @@ div {
 
         .subtituloContacto {
             font-weight: 500;
-            color: $colorSubTitulo; 
+            color: map-get($coloresBases , Subtitulos ); 
             text-shadow: $textShadowBlack;
         }
     }
@@ -197,7 +201,7 @@ div {
             justify-content: center;
             width: 50%;
             background-color: $backgroundMains;
-            color: $colorLetra;
+            color: map-get($coloresBases , Letra );
             font-family: $fuenteSamurai;
             font-size: 2vmax;
             padding: 0 10px 10px 10px;

@@ -162,7 +162,7 @@ div #filtro {
           transform: scale(1.2); }
         div #filtro section nav .ulFiltros .tituloFiltros {
           text-align: center;
-          color: white;
+          color: whitesmoke;
           border-bottom: 1px solid rgba(0, 0, 0, 0.3);
           text-shadow: 0.5px 0.5px rgba(4, 0, 255, 0.541);
           font-weight: 500; }
@@ -234,7 +234,7 @@ div #mainC {
   flex-wrap: wrap;
   font-family: "CF Samurai Bob", sans-serif;
   color: whitesmoke;
-  font-size: 1.5vmax;
+  font-size: 2vmax;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -245,6 +245,8 @@ div #mainC {
     box-shadow: 3px 3px 5px 2px rgba(248, 0, 0, 0.2), -3px -3px 5px 2px rgba(255, 0, 0, 0.2); }
   div #mainC div {
     width: 100%; }
+  div #mainC section {
+    width: 98%; }
   div #mainC .cajaEncargo {
     width: 60vw;
     height: 25vh;
@@ -332,7 +334,7 @@ footer {
       footer .redes ul li .instagram:hover {
         background: linear-gradient(75deg, #ffa600, #ac1a98); }
       footer .redes ul li .youtube:hover {
-        background: #f80101; }
+        background: #fa0000; }
       footer .redes ul li:hover a {
         transform: scale(1.4);
         box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.4);
@@ -402,7 +404,7 @@ footer {
         margin-left: 5vw; }
       header nav .barBtn {
         display: block;
-        font-size: 6vmax;
+        font-size: 8vmax;
         margin-right: 10vw;
         color: #320000;
         cursor: pointer; }
@@ -419,8 +421,9 @@ footer {
         header nav .navMenu li {
           display: none;
           line-height: 4vh;
-          margin: 5vh 0;
-          transition: all .5s; }
+          margin: 5vh auto;
+          transition: all .3s;
+          width: 50%; }
           header nav .navMenu li a {
             font-family: "CF Samurai Bob", sans-serif;
             color: whitesmoke;
@@ -434,7 +437,7 @@ footer {
       header nav #check {
         display: none; }
       header nav #check:checked ~ .navMenu {
-        height: 80%; }
+        height: 100%; }
       header nav #check:checked ~ .navMenu li {
         display: block; }
   div #main #divMain img {

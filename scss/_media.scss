@@ -73,7 +73,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: $backgroundGris;
+            background-color: map-get($coloresBases , BackgroundGris );;
+            
+            
 
             .logoTienda {
                 width: 15vmin;
@@ -82,10 +84,11 @@
 
             .barBtn {
                 display: block;
-                font-size: 6vmax;
+                font-size: 8vmax;
                 margin-right: 10vw;
                 color: rgb(50, 0, 0);
                 cursor: pointer;
+                
             }
 
             .navMenu {
@@ -96,6 +99,7 @@
                 background: linear-gradient(rgb(50, 0, 0), rgba(0, 0, 0, 0.98));
                 text-align: center;
                 transition: all .2s;
+                
 
                 hr {
                     display: none;
@@ -104,9 +108,9 @@
                 li {
                     display: none;
                     line-height: 4vh;
-                    margin: 5vh 0;
-                    transition: all .5s;
-
+                    margin: 5vh auto;
+                    transition: all .3s;
+                    width: 50%;
                     a {
                         font-family: $fuenteSamurai;
                         color: whitesmoke;
@@ -132,11 +136,12 @@
             }
 
             #check:checked~.navMenu {
-                height: 80%;
+                height: 100%; 
             }
 
             #check:checked~.navMenu li {
                 display: block;
+                
             }
         }
     }

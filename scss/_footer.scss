@@ -1,6 +1,6 @@
 footer {
   grid-area: footer;
-  background-color: $backgroundGris;
+  background-color: map-get($coloresBases, BackgroundGris );
   border-radius: 5px;
   box-shadow: $sombra;
   margin: 1vh;
@@ -21,7 +21,7 @@ footer {
           display: block;
           padding: 0 10px;
           background: #333;
-          color: $colorLetra;
+          color: map-get($coloresBases , Letra);
           line-height: 50px;
           font-size: 20px;
           box-shadow: $sombraRedes;
@@ -31,19 +31,19 @@ footer {
 
         .facebook {
           &:hover {
-            background:$colorFacebook;
+            background: map-get($coloresBases , Facebook);
           }
         }
 
         .instagram {
           &:hover {
-            background:$colorInstagram;
+            background: map-get($coloresBases , Instagram);
           }
         }
 
         .youtube {
           &:hover {
-            background:$colorYoutube;
+            background: map-get($coloresBases , Youtube);
           }
         }
 
